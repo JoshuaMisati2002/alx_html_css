@@ -662,7 +662,7 @@ h3, h4, h5, h6 {
         font-size: clamp(13px, 3vw, 15px);
     }
 }
-/* Footer */
+/* FOOTER */
 footer {
     background-color: #282a36;
     padding: 60px 20px 30px;
