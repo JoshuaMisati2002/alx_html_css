@@ -79,25 +79,24 @@ button {
 
 .prosec {
   display: flex;
-  flex-direction: column; /* Stack h2 above image-container */
-  align-items: center;    /* Center the contents horizontally */
-  margin-top: 100px;      /* Adjusted spacing */
-  padding: 0 20px;        /* Add horizontal padding to prevent content from touching edges */
-  box-sizing: border-box; /* Ensures padding doesn't add to the total width */
-  width: 100%;            /* Ensure it takes full width available */
-}
+  flex-direction: column; 
+  align-items: center;    
+  margin-top: 100px;     
+  padding: 0 20px;        
+  box-sizing: border-box; 
+  width: 100%;            
 
 .prosec h2 {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
-  /* Use clamp for fluid font sizing: min, preferred, max */
-  font-size: clamp(40px, 5vw, 80px); /* Min 40px, preferred 5vw, max 80px */
+  
+  font-size: clamp(40px, 5vw, 80px); 
   margin-bottom: 50px;
-  text-align: center; /* Center text within the heading */
-  white-space: normal; /* Allow text to wrap if it's too long */
-  width: 100%; /* Ensure heading takes full available width */
-  max-width: 1200px; /* Limit max width of heading for better readability on very wide screens */
-  /* Remove explicit margin-left as it was causing issues */
+  text-align: center; 
+  white-space: normal; 
+  width: 100%; 
+  max-width: 1200px; 
+  
 }
 
 .image-container {
@@ -697,8 +696,8 @@ footer {
     gap: 20px;
 }
 
-.row-block.block8 > img { /* This targets your smileschool.png logo */
-    width: 150px; /* Adjust based on the actual size of your smileschool.png */
+.row-block.block8 > img { 
+    width: 150px; 
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
