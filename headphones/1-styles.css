@@ -1,0 +1,18 @@
+/*media section*/
+.media-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.images-container{ 
+   display: flex;
+    justify-content: space-around; /* Distributes items evenly with space around them */
+    align-items: center; /* Vertically aligns items in the middle (important if logos have different heights) */
+    flex-wrap: wrap; 
+    max-width: 1200px; /* Limit container width for better readability on large screens */
+    margin-top: 100px; /* Add some space above the images */
+    margin-left: 100px; /* Add some space to the left */
+        gap: 20px; 
+}

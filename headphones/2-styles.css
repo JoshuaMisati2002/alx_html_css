@@ -1,0 +1,40 @@
+.background-pic2{
+    background-image: url(background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.statistics-paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 220px;
+    color: white;
+   
+}
+.statistics-container {
+    display: flex;            
+    justify-content: center;   
+    flex-wrap: wrap;           
+    gap: 70px;                 
+    max-width: 1200px;         /* Limits the maximum width of the container on large screens */
+    margin: 0 auto;            /* Centers the container itself on the page */
+    margin-top: 70px;
+}
+.stat-content{
+    color: white;
+    margin-top: -145px;
+    margin-left: 35px;
+}
+.num{
+    font-weight: 1000;
+    font-size: 38px;
+}
+.stats-p{
+    font-size: 15px;
+}

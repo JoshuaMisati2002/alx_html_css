@@ -1,0 +1,118 @@
+/* --- Call to Action Section (Now with Contact Form) --- */
+.call-action {
+    display: flex;
+    flex-direction: column; /* Stack its direct children (form container and optional button) vertically */
+    align-items: center;    /* Horizontally center the form container and the button */
+    padding: 50px 20px; /* Adjust padding as needed for the whole section */
+    background-color: #f8f8f8; /* Optional: light background for this section */
+}
+
+.contact-form-container {
+    background-color: #ffffff; /* White background for the form itself */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit form width */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    margin-bottom: 30px; /* Space between form and the call-button (if kept) */
+    text-align: center; /* Center the "Contact Us" heading */
+}
+
+.contact-form-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form groups */
+}
+
+.form-group {
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+.form-group label {
+    display: block; /* Make labels take full width */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+    font-family: inherit; /* Inherit font from body */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px;
+}
+
+/* Style for the form's submit button */
+.submit-button {
+    background-color: #007bff; /* Example: A blue color for submit button */
+    color: white;
+    font-size: 1em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button if form is a flex column */
+    margin-top: 15px; /* Space above the button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Original .call-button (if you decide to keep it separate from the form) */
+.call-button {
+    background-color: #FF6565;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px; /* Space between the form and this button */
+}
+
+/* Responsive adjustments for call to action / form section */
+@media (max-width: 768px) {
+    .call-action {
+        padding: 30px 15px;
+    }
+    .contact-form-container {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-form-container h2 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9em;
+    }
+    .submit-button,
+    .call-button {
+        font-size: 0.95em;
+        padding: 12px 20px;
+    }
+}
